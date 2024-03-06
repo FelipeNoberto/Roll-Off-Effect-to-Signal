@@ -3,6 +3,7 @@
 ### Efeito do Fator de Roll-Off no Sinal
 
 **Descrição e Revisão Teórica**
+
 O sinal QPSK gera um fluxo de bits que é modulado.
 O espectro do sinal digital é, em teoria, infinito.
 Na prática, os canais de comunicação possuem banda limitada, o que causa "espalhamento" dos pulsos durante a transmissão.
@@ -42,7 +43,8 @@ B0: Largura de banda de Nyquist
 
 α: Fator de Roll-off
 
-Consequências do Fator de Roll-Off
+
+**Consequências do Fator de Roll-Off**
 
 O uso do cosseno levantado aumenta a largura de banda de transmissão em relação à solução ideal (Nyquist) em αB0. A razão entre o excesso de banda e a banda de Nyquist é igual a α.
 
