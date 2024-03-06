@@ -2,14 +2,19 @@
 
 ### Efeito do Fator de Roll-Off no Sinal
 
-**Descrição e Revisão Teórica**
+**Descrição**
 
-O sinal QPSK gera um fluxo de bits que é modulado.
+Usamos para esse estudo um sinal QPSK gera um fluxo de bits que é modulado.
+Podemos notar que os diferentes valores de Roll-Off afetam o sinal, mais especificamente, seu espectro.
+De modo que um maior fator de Roll-Off ocasiona  que o sinal tenha uma maior largura de banda, porém isso refletirá em um sinal com menor Interferência entre Símbolos e melhor Eficiência Espectral
+
+**Revisão Teórica**
 O espectro do sinal digital é, em teoria, infinito.
 Na prática, os canais de comunicação possuem banda limitada, o que causa "espalhamento" dos pulsos durante a transmissão.
 Esse "espalhamento" pode gerar superposição entre pulsos adjacentes, causando a Interferência Entre Símbolos (IES).
 A IES, se não for compensada, pode levar a erros na recepção do sinal.
 Uma maneira de controlar a IES é formatar os pulsos transmitidos de maneira adequada.
+
 Fator de Roll-Off e Cosseno Levantado
 
 O Cosseno Levantado é uma técnica de formatação de pulsos que, em conjunto com a taxa de amostragem adequada, pode eliminar a IES.
@@ -18,6 +23,7 @@ Na prática, a implementação ideal do filtro formatador de pulsos é difícil,
 
 O filtro ideal não é fisicamente realizável.
 A forma de onda depende da precisão dos relógios da recepção, o que pode resultar em alta IES.
+
 Solução com Fator de Roll-Off
 
 Existe um conjunto de filtros com diferentes fatores de Roll-off que atendem às necessidades de comunicação. O fator de Roll-off (α) é definido por:
