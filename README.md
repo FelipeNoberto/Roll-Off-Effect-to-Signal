@@ -21,7 +21,7 @@ Solução com Fator de Roll-Off
 
 Existe um conjunto de filtros com diferentes fatores de Roll-off que atendem às necessidades de comunicação. O fator de Roll-off (α) é definido por:
 
-α = 1 - (f1/B0)
+- α = 1 - (f1/B0)
 
 Onde:
 
@@ -32,13 +32,16 @@ O valor de α varia entre 0 e 1, sendo 0 o valor mais próximo do filtro ideal (
 
 A largura de banda de transmissão necessária (B) usando o cosseno levantado é dada por:
 
-B = B0(1 + α)
+- B = B0(1 + α)
 
 Onde:
 
 B: Largura de banda de transmissão
+
 B0: Largura de banda de Nyquist
+
 α: Fator de Roll-off
+
 Consequências do Fator de Roll-Off
 
 O uso do cosseno levantado aumenta a largura de banda de transmissão em relação à solução ideal (Nyquist) em αB0. A razão entre o excesso de banda e a banda de Nyquist é igual a α.
